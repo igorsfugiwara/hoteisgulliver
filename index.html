@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotéis - Gulliver Traveller</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <!-- ACESSIBILIDADE -->
+        <section class="acessibilidade">
+            <div class="acessibilidade__contraste"></div>
+            <div class="acessibilidade__fontemenos"></div>
+            <div class="acessibilidade__fontemais"></div>
+            <div class="acessibilidade__idioma"></div>
+            <div class="acessibilidade__moeda"></div>
+        </section>
+        <!-- LOGO, CADASTRO, LOG IN -->
+        <section class="homeLogin">
+            <div class="logo"></div>
+            <div class="cadastro"></div>
+            <div class="login"></div>
+        </section>
+        <!-- BARRA DE NAVEGAÇÃO  -->
+        <nav class="navbar">
+            <div class="hospedagem"></div>
+            <div class="voos"></div>
+            <div class="aluguelCarro"></div>
+            <div class="gastronomia"></div>
+        </nav>
+    </header>
+    <main>
+        <aside class="leftbar">
+            <section class="pesquisar">
+                <form action="#">
+                    <label for="destino">Destino:</label>
+                    <input type="text" placeholder="Destino ou nome da acomodação" id="destino">
+                    <label for="dataEntrada">Data de Entrada:</label>
+                    <input type="date" id="dataEntrada">
+                    <label for="dataSaida">Data de Saída:</label>
+                    <input type="date" id="dataSaida">
+                    <label for="adultos">Adultos</label>
+                    <select name="adultos" id="adultos">
+                        <option value="adult1">1 adulto</option>
+                        <option value="adult2">2 adulto</option>
+                        <option value="adult3">3 adulto</option>
+                        <option value="adult4">4 adulto</option>
+                        <option value="adult5">5 adulto</option>
+                        <option value="adult6">6 adulto</option>
+                        <option value="adult7">7 adulto</option>
+                        <option value="adult8">8 adulto</option>
+                        <option value="adult9">9 adulto</option>
+                        <option value="adult10">10 adulto</option>
+                        <option value="adult11">11 adulto</option>
+                        <option value="adult12">12 adulto</option>
+                        <option value="adult13">13 adulto</option>
+                        <option value="adult14">14 adulto</option>
+                        <option value="adult15">15 adulto</option>
+                        <option value="adult16">16 adulto</option>
+                        <option value="adult17">17 adulto</option>
+                        <option value="adult18">18 adulto</option>
+                        <option value="adult19">19 adulto</option>
+                        <option value="adult20">20 adulto</option>
+                    </select>
+                    <select name="criancas" id="criancas">
+                        <option value="crianca1">1 criança</option>
+                        <option value="crianca2">2 crianças</option>
+                        <option value="crianca3">3 crianças</option>
+                        <option value="crianca4">4 crianças</option>
+                        <option value="crianca5">5 crianças</option>
+                        <option value="crianca6">6 crianças</option>
+                        <option value="crianca7">7 crianças</option>
+                        <option value="crianca8">8 crianças</option>
+                        <option value="crianca9">9 crianças</option>
+                        <option value="crianca10">10 crianças</option>
+                        <option value="crianca11">11 crianças</option>
+                        <option value="crianca12">12 crianças</option>
+                        <option value="crianca13">13 crianças</option>
+                        <option value="crianca14">14 crianças</option>
+                        <option value="crianca15">15 crianças</option>
+                        <option value="crianca16">16 crianças</option>
+                        <option value="crianca17">17 crianças</option>
+                        <option value="crianca18">18 crianças</option>
+                        <option value="crianca19">19 crianças</option>
+                        <option value="crianca20">20 crianças</option>
+                    </select>
+                    <select name="quartos" id="quartos">
+                        <option value="quarto1">1 Quarto</option>
+                        <option value="quarto2">2 Quartos</option>
+                        <option value="quarto3">3 Quartos</option>
+                        <option value="quarto4">4 Quartos</option>
+                        <option value="quarto5">5 Quartos</option>
+                        <option value="quarto6">6 Quartos</option>
+                        <option value="quarto7">7 Quartos</option>
+                        <option value="quarto8">8 Quartos</option>
+                        <option value="quarto9">9 Quartos</option>
+                        <option value="quarto10">10 Quartos</option>
+                    </select>
+                    <article class="tipodeviagem">
+                        <div class="trabalho">
+                            <input type="checkbox" id="trabalho">
+                            <label for="trabalho">Estou viajando a trabalho</label>
+                        </div>
+                        <div class="mochilao">
+                            <input type="checkbox" id="mochilao">
+                            <label for="mochilao">Estou planejando um mochilão</label>
+                        </div>
+                        <div class="turismo">
+                            <input type="checkbox" id="trabalho">
+                            <label for="trabalho">Estou viajando a turismo</label>
+                        </div>
+                    </article>
+                </form>
+            </section>
+            <section class="filtros">
+                <h3>Filtrar por:</h3>
+                <div class="preco">
+                    <h4>Orçamento por dia:</h4>
+                    <div class="preco__opcoes"></div>
+                        <input type="checkbox" id="ate200">
+                        <label for="ate200">R$0,00 - R$200,00</label>
+                        <input type="checkbox" id="ate400">
+                        <label for="ate400">R$200,00 - R$400,00</label>
+                        <input type="checkbox" id="ate600">
+                        <label for="ate600">R$400,00 - R$600,00</label>
+                        <input type="checkbox" id="ate800">
+                        <label for="ate800">R$600,00 - R$800,00</label>
+                        <input type="checkbox" id="ate1000">
+                        <label for="ate1000">R$800,00 - R$1000,00</label>
+                        <input type="checkbox" id="ate1200">
+                        <label for="ate1200">R$100,00 - R$1200,00</label>
+                        <input type="checkbox" id="ate1400">
+                        <label for="ate1400">R$1200,00 - R$1400,00</label>
+                        <input type="checkbox" id="ate1600">
+                        <label for="ate1600">R$1400,00 - R$1600,00</label>
+                        <input type="checkbox" id="ate1800">
+                        <label for="ate1800">R$1600,00 - R$1800,00</label>
+                        <input type="checkbox" id="ate2000">
+                        <label for="ate2000">R$1800,00 - R$2000,00</label>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </main>
+</body>
+</html>
