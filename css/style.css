@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cabecalho{
+    background-color: #ff9800;
+}
+.acessibilidade{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.acessibilidade__contraste{
+    display: flex;
+}
+.acessibilidade__fonte{
+    display: flex;
+}
+.homeLogin{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+main{
+    display: flex;
+}
