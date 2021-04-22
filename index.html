@@ -1,35 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotéis - Gulliver Traveller</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
 </head>
+
 <body>
     <!-- CABEÇALHO -->
     <header class="cabecalho">
         <!-- ACESSIBILIDADE -->
         <section class="acessibilidade">
-            <div class="acessibilidade__contraste"></div>
-            <div class="acessibilidade__fontemenos"></div>
-            <div class="acessibilidade__fontemais"></div>
-            <div class="acessibilidade__idioma"></div>
+            <h2>Acessibilidade</h2>
+            <div class="acessibilidade__contraste">
+                <!-- 3 contrastes para a aplicação -->
+                <h5>Contraste</h5>
+                <label class="contraste1">
+                    <input type="radio" name="radio">
+                </label>
+                <label class="contraste2">
+                    <input type="radio" name="radio">
+                </label>
+                <label class="contraste3">
+                    <input type="radio" name="radio">
+                </label>
+            </div>
+            <div class="acessibilidade__fonte">
+                <div class="acessibilidade__fonte--menos">
+                    <i class="fas fa-search-minus"></i>
+                </div>
+                <div class="acessibilidade__fonte--mais">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="acessibilidade__idioma">
+                <select name="idiomas" id="idiomas">
+                    <option value="pt-br">Português Brasil</option>
+                    <option value="en">Inglês</option>
+                    <option value="sp">Espanhol</option>
+                    <option value="fr">Francês</option>
+                </select>
+            </div>
             <div class="acessibilidade__moeda"></div>
-        </section>
-        <!-- LOGO, CADASTRO, LOG IN -->
+                <select name="moeda" id="moeda">
+                    <option value="real">R$</option>
+                    <option value="dollar">US$</option>
+                    <option value="euro">€</i></option>
+                    <option value="libra">£</i></option>
+                </select>
+            </section>
+            <!-- LOGO, CADASTRO, LOG IN -->
         <section class="homeLogin">
-            <div class="logo"></div>
-            <div class="cadastro"></div>
-            <div class="login"></div>
+            <div class="logo">
+                <h1>Gulliver Traveller</h1>
+            </div>
+            <ul>
+                <li><a href="#">Cadastre-se</a></li>
+                <li><a href="#">Log in</a></li>
+            </ul>
         </section>
         <!-- BARRA DE NAVEGAÇÃO  -->
         <nav class="navbar">
-            <div class="hospedagem"></div>
-            <div class="voos"></div>
-            <div class="aluguelCarro"></div>
-            <div class="gastronomia"></div>
+            <ul>
+                <li><a href="#">Hospedagem</a></li>
+                <li><a href="#">Voos</a></li>
+                <li><a href="#">Aluguel de Carro</a></li>
+                <li><a href="#">Gastronomia</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -120,30 +163,200 @@
                 <div class="preco">
                     <h4>Orçamento por dia:</h4>
                     <div class="preco__opcoes"></div>
-                        <input type="checkbox" id="ate200">
-                        <label for="ate200">R$0,00 - R$200,00</label>
-                        <input type="checkbox" id="ate400">
-                        <label for="ate400">R$200,00 - R$400,00</label>
-                        <input type="checkbox" id="ate600">
-                        <label for="ate600">R$400,00 - R$600,00</label>
-                        <input type="checkbox" id="ate800">
-                        <label for="ate800">R$600,00 - R$800,00</label>
-                        <input type="checkbox" id="ate1000">
-                        <label for="ate1000">R$800,00 - R$1000,00</label>
-                        <input type="checkbox" id="ate1200">
-                        <label for="ate1200">R$100,00 - R$1200,00</label>
-                        <input type="checkbox" id="ate1400">
-                        <label for="ate1400">R$1200,00 - R$1400,00</label>
-                        <input type="checkbox" id="ate1600">
-                        <label for="ate1600">R$1400,00 - R$1600,00</label>
-                        <input type="checkbox" id="ate1800">
-                        <label for="ate1800">R$1600,00 - R$1800,00</label>
-                        <input type="checkbox" id="ate2000">
-                        <label for="ate2000">R$1800,00 - R$2000,00</label>
-                    </div>
+                    <input type="checkbox" name="preco" id="ate200">
+                    <label for="ate200">R$0,00 - R$200,00</label>
+                    <input type="checkbox" name="preco" id="ate400">
+                    <label for="ate400">R$200,00 - R$400,00</label>
+                    <input type="checkbox" name="preco" id="ate600">
+                    <label for="ate600">R$400,00 - R$600,00</label>
+                    <input type="checkbox" name="preco" id="ate800">
+                    <label for="ate800">R$600,00 - R$800,00</label>
+                    <input type="checkbox" name="preco" id="ate1000">
+                    <label for="ate1000">R$800,00 - R$1000,00</label>
+                    <input type="checkbox" name="preco" id="ate1200">
+                    <label for="ate1200">R$100,00 - R$1200,00</label>
+                    <input type="checkbox" name="preco" id="ate1400">
+                    <label for="ate1400">R$1200,00 - R$1400,00</label>
+                    <input type="checkbox" name="preco" id="ate1600">
+                    <label for="ate1600">R$1400,00 - R$1600,00</label>
+                    <input type="checkbox" name="preco" id="ate1800">
+                    <label for="ate1800">R$1600,00 - R$1800,00</label>
+                    <input type="checkbox" name="preco" id="ate2000">
+                    <label for="ate2000">R$1800,00 - R$2000,00</label>
+                </div>
+                </div>
+                <div class="categoria">
+                    <h4>Categoria</h4>
+                    <input type="checkbox" name="categoria" id="2estrelas">
+                    <label for="2estrelas">2 estrelas</label>
+                    <input type="checkbox" name="categoria" id="3eestrelas">
+                    <label for="3eestrelas">3 estrelas</label>
+                    <input type="checkbox" name="categoria" id="4estrelas">
+                    <label for="4estrelas">4 estrelas</label>
+                    <input type="checkbox" name="categoria" id="5estrelas">
+                    <label for="5estrelas">5 estrelas</label>
+                    <input type="checkbox" name="categoria" id="semClassificacao">
+                    <label for="semClassificacao">Sem Classificação</label>
+                </div>
+                <div class="distancia">
+                    <h4>Distância da Avenida Paulista</h4>
+                        <input type="checkbox" name="categoria" id="1km">
+                        <label for="1km">Menos de 1 km</label>
+                        <input type="checkbox" name="categoria" id="3km">
+                        <label for="3km">Menos de 3 km</label>
+                        <input type="checkbox" name="categoria" id="5km">
+                        <label for="5km">Menos de 5 km</label>
+                        <input type="checkbox" name="categoria" id="10km">
+                        <label for="10km">menos de 10 km</label>
                 </div>
             </section>
         </aside>
+        <!-- CONTEÚDO PRINCIPAL -->
+        <section class="content">
+            <div class="ondeestou">
+                <h1>Hoteis em São Paulo</h1>
+                <h2>Você está em <a href="#">Home</a>><a href="#">Hotéis</a>
+            </div>
+
+            <h3>Blue Tree Premium Paulista </h3>
+            <div class="hot">
+                <div class="parallax__bluetree">
+
+                </div>
+                <!-- <img src="../imgs/hoteis/blutree.png" alt=""> -->
+                <div class="txt">
+                    <p>Localizado a uma quadra da Av. Paulista, o Blue Tree Premium Paulista Hotel está no coração de
+                        São Paulo tem endereço privilegiado: está cercado de teatros, museus, shoppings, bares,
+                        restaurantes e da elegante Rua Oscar Freire. O hotel tem uma completa infraestrutura para seu
+                        conforto e facilidades exclusivas, como os serviços orientais. É a união do estilo japonês de
+                        servir aliado à hospitalidade brasileira. Estamos esperando por você!</p>
+                    <p>O que tem no Hotel?</p>
+                    <ul class="list__servicos">
+                        <li>
+                            <div class="list__header">Serviços:</div>
+                            <ul class="list__item">
+                                <li>Internet Wi-fi</li>
+                                <li>Estacionamento</li>
+                                <li>Sala de Eventos</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="list__header">Lazer:</div>
+                            <ul class="list__item">
+                                <li>Fitness Center</li>
+                                <li>Piscina Climatizada</li>
+                                <li>Sauna</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="list__header">Gastronomia:</div>
+                            <ul class="list__item">
+                                <li>Restaurante Noah</li>
+                                <li>Café da manhã Oriental</li>
+                                <li>Room Service</li>
+                                <li>Lobby Bar</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="https://www.bluetree.com.br/hotel/blue-tree-premium-paulista/" target="_blank">Visite o
+                        Hotel</a>
+                </div>
+            </div>
+            <h3>Renaissance</h3>
+            <div class="hot">
+                <div class="parallax__renaissance">
+
+                </div>
+                <!-- <img src="../imgs/hoteis/renaissance.jpg" alt=""> -->
+                <div class="txt">
+                    <p>Aproveite ao máximo sua viagem a São Paulo no Hotel Renaissance São Paulo Hotel. Nosso hotel de
+                        luxo está localizado no charmoso bairro dos Jardins, a poucos passos da famosa Avenida Paulista.
+                        Nossos quartos e suítes atendem perfeitamente às suas necessidades, com TV de tela plana, Wi-Fi
+                        de alta velocidade, roupa de cama luxuosa e vistas de tirar o fôlego. Passe um tempo em nosso
+                        andar do bem-estar: mantenha sua rotina de exercícios em nossa academia de ginástica ou relaxe
+                        em nossa piscina ao ar livre. Nosso Spa oferece experiências únicas, revitalizando seu corpo e
+                        sua mente. Descubra novos sabores em nossos restaurantes e prove deliciosos ingredientes locais.
+                        Nosso hotel conta com mais de 1.800 metros quadrados de espaço para eventos como reuniões e
+                        casamentos, com instalações modernas e flexíveis que vão impressionar seus convidados. Estamos
+                        comprometidos a entregar uma experiência de estada única em sua viagem, seja ela a negócios ou
+                        lazer.</p>
+                    <p>O que tem no Hotel?</p>
+                    <ul class="list__servicos">
+                        <li>
+                            <div class="list__header">Serviços:</div>
+                            <ul class="list__item">
+                                <li>Internet Wi-fi</li>
+                                <li>Estacionamento</li>
+                                <li>Sala de Eventos</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="list__header">Lazer:</div>
+                            <ul class="list__item">
+                                <li>Fitness Center</li>
+                                <li>Piscina Climatizada</li>
+                                <li>Sauna</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="list__header">Gastronomia:</div>
+                            <ul class="list__item">
+                                <li>Restaurante Noah</li>
+                                <li>Café da manhã Oriental</li>
+                                <li>Room Service</li>
+                                <li>Lobby Bar</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="https://www.marriott.com.br/hotels/travel/saobr-renaissance-sao-paulo-hotel/"
+                        target="_blank">Visite o Hotel</a>
+                </div>
+            </div>
+            <h3>Golden Tulip</h3>
+            <div class="hot">
+                <div class="parallax__goldentulip">
+
+                </div>
+                <!-- <img src="../imgs/hoteis/renaissance.jpg" alt=""> -->
+                <div class="txt">
+                    <p>O hotel Tulip Inn São Paulo Paulista está localizado a uma quadra da estação de metrô Paraiso, a
+                        três quadras da Avenida Paulista, com fácil acesso à Avenida 23 de Maio e próximo a shoppings,
+                        restaurantes, bares e pontos turísticos. Nosso hotel garante conveniência, conforto e uma
+                        localização privilegiada.</p>
+                    <p>O que tem no Hotel?</p>
+                    <ul class="list__servicos">
+                        <li>
+                            <div class="list__header">Serviços:</div>
+                            <ul class="list__item">
+                                <li>Internet Wi-fi</li>
+                                <li>Estacionamento</li>
+                                <li>Sala de Eventos</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="list__header">Lazer:</div>
+                            <ul class="list__item">
+                                <li>Fitness Center</li>
+                                <li>Piscina Climatizada</li>
+                                <li>Sauna</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="list__header">Gastronomia:</div>
+                            <ul class="list__item">
+                                <li>Restaurante Noah</li>
+                                <li>Café da manhã Oriental</li>
+                                <li>Room Service</li>
+                                <li>Lobby Bar</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="https://tulip-inn-sao-paulo-paulista.goldentulip.com/pt-br/" target="_blank">Visite o
+                        Hotel</a>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
+
 </html>
