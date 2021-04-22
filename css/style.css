@@ -15,6 +15,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 1vw;
 }
 .acessibilidade h2, .acessibilidade div{
     margin: 0 1vw;
@@ -24,6 +25,10 @@
 }
 .acessibilidade__contraste, .acessibilidade__fonte {
     display: flex;
+    margin-right: 1em;
+}
+.acessibilidade__idioma select, .acessibilidade__moeda select{
+    border-radius: 40%;
 }
 
 
@@ -38,9 +43,18 @@
     align-items: center;
     justify-content: center;
     margin: 1vh 1vw;
+    width: 20vw;
+}
+.homeLogin__logo{
+    width: 50vw;
 }
 .homeLogin__item a{
     color: #fff;
+    text-decoration: none;
+}
+.homeLogin__item:hover{
+    background-color: orangered;
+    border-bottom: 1vh solid #fff;
 }
 ul {
     display: flex;
@@ -53,7 +67,7 @@ main {
 
 .navbar__item {
     width: 20vw;
-    height: 8vh;
+    height: 11vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -63,6 +77,7 @@ main {
 
 .navbar__item>a{
     color: #fff;
+    text-decoration: none;
 }
 .navbar__item:hover{
     background-color: orangered;
@@ -96,20 +111,43 @@ select {
     width: 100%;
 }
 
-.pesquisar__criancas {
+.pesquisar__criancas, .pesquisar__quartos{
     width: 48%;
+    font-size:0.8em;
 }
 
-.pesquisar__quartos {
-    width: 48%;
-}
 
+/* FILTROS */
+.filtros{
+    padding: 1vw 0;
+    font-size: 0.8em;
+}
+.preco, .categoria, .distancia{
+    border: 1px solid black;
+    padding: 1vw;
+    border-radius: 3px;
+    margin: 1em 0;
+}
+.linha{
+    display: block;
+}
+form label{
+    font-size: 0.8em;
+}
 /* CONTEUDO */
 .content{
     padding: 1vw;
 }
+.content h3{
+    font-size: 2em;
+    margin: 8vh 0 2vh;
+}
 .ondeestou{
-    margin-bottom: 2vw;
+    margin-bottom: 15vh;
+}
+.ondeestou h1{
+    font-size: 2.2em;
+    margin-top: 2em;
 }
 .ondeestou h2{
     font-size: 0.8em;
@@ -144,4 +182,9 @@ select {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.txt p{
+    font-size: 1.2em;
+    margin: 8vh 0 2vh;
 }
