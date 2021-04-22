@@ -57,21 +57,21 @@
             </section>
             <!-- LOGO, CADASTRO, LOG IN -->
         <section class="homeLogin">
-            <div class="logo">
+            <div class="homeLogin__logo">
                 <h1>Gulliver Traveller</h1>
             </div>
             <ul>
-                <li><a href="#">Cadastre-se</a></li>
-                <li><a href="#">Log in</a></li>
+                <li class="homeLogin__item"><a href="#">Cadastre-se</a></li>
+                <li class="homeLogin__item"><a href="#">Log in</a></li>
             </ul>
         </section>
         <!-- BARRA DE NAVEGAÇÃO  -->
         <nav class="navbar">
             <ul>
-                <li><a href="#">Hospedagem</a></li>
-                <li><a href="#">Voos</a></li>
-                <li><a href="#">Aluguel de Carro</a></li>
-                <li><a href="#">Gastronomia</a></li>
+                <li class="navbar__item"><a href="#"><i class="fas fa-bed"></i> Hospedagem</a></li>
+                <li class="navbar__item"><a href="#"><i class="fas fa-plane-departure"></i> Voos</a></li>
+                <li class="navbar__item"><a href="#"><i class="fas fa-plane-departure"></i> Aluguel de Carro</a></li>
+                <li class="navbar__item"><a href="#"><i class="fas fa-utensils"></i> Gastronomia</a></li>
             </ul>
         </nav>
     </header>
@@ -86,7 +86,7 @@
                     <label for="dataSaida">Data de Saída:</label>
                     <input type="date" id="dataSaida">
                     <label for="adultos">Adultos</label>
-                    <select name="adultos" id="adultos">
+                    <select name="adultos" id="adultos" class="pesquisar__adultos">
                         <option value="adult1">1 adulto</option>
                         <option value="adult2">2 adulto</option>
                         <option value="adult3">3 adulto</option>
@@ -108,7 +108,7 @@
                         <option value="adult19">19 adulto</option>
                         <option value="adult20">20 adulto</option>
                     </select>
-                    <select name="criancas" id="criancas">
+                    <select name="criancas" id="criancas" class="pesquisar__criancas">
                         <option value="crianca1">1 criança</option>
                         <option value="crianca2">2 crianças</option>
                         <option value="crianca3">3 crianças</option>
@@ -130,7 +130,7 @@
                         <option value="crianca19">19 crianças</option>
                         <option value="crianca20">20 crianças</option>
                     </select>
-                    <select name="quartos" id="quartos">
+                    <select name="quartos" id="quartos" class="pesquisar__quartos">
                         <option value="quarto1">1 Quarto</option>
                         <option value="quarto2">2 Quartos</option>
                         <option value="quarto3">3 Quartos</option>
