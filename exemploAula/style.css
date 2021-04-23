@@ -1,70 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Roboto&amp;display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
+
 ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: #fff;
 }
+
 .container {
   width: 100%;
   height: 100vh;
 }
-.links__menu {  
+
+.links__menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .banner {
   background-image: url(./images/skye.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .header {
   width: 100%;
-  height: 10vh; 
+  height: 10vh;
   color: #fff;
   padding: 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header h2{
+
+.header h2 {
   display: flex;
-    width: 20vw;
+  width: 20vw;
 }
+
 .header__menu ul {
   display: flex;
   justify-content: flex-end;
 }
+
 .header__menu__item {
   font-size: 1rem;
   margin: 0 5px;
   font-weight: 100;
 }
+
 .header__chamada {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;  
+  height: 100vh;
   width: 100%;
 }
+
 .header__titulo {
   font-size: 4rem;
-  color: #fff;  
+  color: #fff;
 }
+
 .header__texto {
   width: 50vw;
   font-size: 1.5rem;
@@ -72,29 +86,34 @@ a {
   color: #fff;
   margin-bottom: 2rem;
 }
+
 .header__botao {
   padding: 30px 50px;
   background-color: rgba(54, 4, 4, .8);
   border-radius: 5px;
   font-size: 1.5rem;
 }
+
 .conhecer {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px;
 }
+
 .conhecer h3 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 35px;
 }
+
 .conhecer p {
   max-width: 900px;
   margin-bottom: 35px;
   text-align: center;
 }
-.destaques {  
+
+.destaques {
   background: #000;
   color: #fff;
   display: flex;
@@ -103,38 +122,52 @@ a {
   padding: 20px 0;
   text-align: center;
 }
+
 .destaques h3 {
   font-size: 2rem;
   margin-bottom: 35px;
 }
+
 .destaques p {
   max-width: 800px;
   margin-bottom: 35px;
   font-size: 1.2rem;
   text-align: center;
 }
-.destaques .box {  
+
+.destaques .box {
   display: flex;
   align-items: center;
 }
+
+.box {
+  width: 100%;
+  justify-content: center;
+}
+
 .destaques .box li {
   margin: 10px;
-  padding: 10px; 
+  padding: 10px;
   text-align: center;
   border: 1px solid #666;
 }
+
 .destaques .box li h4 {
   color: #fff;
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
-.box li img{
+
+.box li img {
   width: 25vw;
+  max-height: 200px;
 }
+
 .destaques .box li p {
   font-size: 1.2rem;
   margin-bottom: 30px;
 }
+
 .rodape {
   display: flex;
   flex-direction: column;
@@ -142,52 +175,66 @@ a {
   background-color: rgb(54, 4, 4);
   padding: 50px 0;
 }
+
 .rodape ul {
   display: flex;
   margin-bottom: 25px;
 }
+
 .rodape ul li {
   margin-right: 10px;
 }
+
 .rodape ul li a {
   font-size: 1.5em;
 }
+
 .rodape p {
   color: #fff;
   text-align: center;
 }
+
 /* exercicio */
-.fa-globe, .fa-paper-plane{
+.fa-globe,
+.fa-paper-plane {
   width: 100%;
 }
 
-.fapinterest, .fa-instagram, .fa-facebook, .fa-twitter{
+.fapinterest,
+.fa-instagram,
+.fa-facebook,
+.fa-twitter {
   display: flex;
 }
+
 /* media queries */
-@media (max-width: 940px) {  
-  .header {    
+@media (max-width: 940px) {
+  .header {
     background-color: rgba(54, 4, 4, .9);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
   }
+
   .linha {
     width: 30px;
     height: 3px;
     background: #fff;
     margin: 5px;
   }
+
   .header__menu {
-        position: relative;
+    position: relative;
   }
+
   .hamburguer {
     position: absolute;
     right: 0;
     top: -15px;
     cursor: pointer;
   }
+
   .links__menu {
     width: 200px;
     height: 200px;
@@ -201,23 +248,28 @@ a {
     flex-direction: column;
     align-items: flex-end;
   }
+
   .links__menu.open {
     right: 0;
   }
+
   .header__titulo {
-    font-size: 2rem;   
+    font-size: 2rem;
     margin: 2rem;
   }
+
   .header__texto {
     width: 90%;
-    font-size: 1rem;  
+    font-size: 1rem;
   }
-    .destaques .box {
-      flex-direction: column;
-    }
+
+  .destaques .box {
+    flex-direction: column;
+  }
 }
+
 @media (max-width: 450px) {
-  html{
+  html {
     font-size: 14px;
   }
 }
