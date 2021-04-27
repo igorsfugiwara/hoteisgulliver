@@ -61,15 +61,13 @@
     justify-content: start;
     padding-left: 5em;
 }
-
 .homeLogin__item a {
     color: #fff;
     text-decoration: none;
 }
 
-.homeLogin__item:hover {
-    background-color: orangered;
-    border-bottom: 1vh solid #fff;
+.homeLogin__item a:hover {
+    color:#000;
 }
 
 ul {
@@ -105,7 +103,12 @@ main {
     background-color: orangered;
     border-bottom: 1vh solid #fff;
 }
-
+.fechar__hamburguer{
+    display: none;
+}
+.links__menu{
+   justify-content: center;
+}
 .leftbar {
     margin: 2vw;
 }
@@ -311,7 +314,7 @@ footer p {
 @media(max-width: 450px) {
 
     main {
-        margin-top: 11vh;
+        margin-top: 6vh;
     }
 
     .content {
@@ -326,7 +329,9 @@ footer p {
     .acessibilidade h2 {
         display: none;
     }
-
+.homeLogin{
+    justify-content: start;
+}
     .homeLogin__logo {
         padding-left: 0;
     }
@@ -334,7 +339,12 @@ footer p {
     .homeLogin__logo h1 {
         font-size: 1.2em;
     }
-
+    .homeLogin__item{
+        width: 19vw;
+    }
+    .homeLogin__logo{
+        width: 40vw;
+    }
     .homeLogin__item a {
         font-size: 0.8em;
     }
@@ -377,15 +387,12 @@ footer p {
         background-color: orange;
         width: 100%;
         text-decoration: none;
+        padding: 0.4em;
+    color: white;
     }
 
     /* hamburguer */
-    .hamburguer__linha {
-        width: 30px;
-        height: 3px;
-        background-color: #000;
-        margin: 5px;
-    }
+ 
 
     .hamburguer {
         position: absolute;
@@ -397,7 +404,7 @@ footer p {
     .hamburguer__linha {
         width: 30px;
         height: 3px;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
         margin: 5px;
     }
     .hamburguer {
@@ -439,7 +446,6 @@ footer p {
     .header__menu {
         display: flex;
         flex-direction: column;
-        width: 50vw;
         align-items: flex-end;
         position: absolute;
         right: 0;
@@ -448,6 +454,7 @@ footer p {
 
     .navbar__item {
         width: 100%;
+        justify-content: end;
+        padding: 0.4em;
     }
-}
 }
