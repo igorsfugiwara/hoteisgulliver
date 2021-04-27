@@ -9,6 +9,9 @@
 
 .cabecalho {
     background-color: #ff9800;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .acessibilidade {
@@ -47,6 +50,8 @@
 }
 .homeLogin__logo{
     width: 50vw;
+    justify-content: start;
+    padding-left: 5em;
 }
 .homeLogin__item a{
     color: #fff;
@@ -63,11 +68,14 @@ ul {
 
 main {
     display: flex;
+    margin-top: 20vh;
 }
-
+.acessibilidade{
+    height: 5vh;
+}
 .navbar__item {
     width: 20vw;
-    height: 11vh;
+    height: 9vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -83,7 +91,6 @@ main {
     background-color: orangered;
     border-bottom: 1vh solid #fff;
 }
-
 .leftbar {
     margin: 2vw;
 }
@@ -153,13 +160,8 @@ form label{
     font-size: 0.8em;
 }
 .parallax__renaissance {
-    /* The image used */
     background-image: url("../img/hoteis/renaissance.jpg");
-
-    /* Set a specific height */
     min-height: 250px;
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -188,3 +190,82 @@ form label{
     font-size: 1.2em;
     margin: 8vh 0 2vh;
 }
+.txt a{
+    display: flex;
+    justify-content: flex-end;
+}
+.list__item{
+    display: block;
+    margin: 0 2vw;
+}
+
+/* RODAPÉ */
+footer{
+    background-color: #ff9800;
+    color: white;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+ footer ul li{
+    padding: 0.2em;
+    font-size: 1.5em;
+ }
+ footer p{
+    margin: 1em 0;
+ }
+
+/* MEDIA QUERY */
+@media(max-width: 450px){
+    .acessibilidade h2{
+        display: none;
+    }
+    .homeLogin__logo{
+        padding-left: 0;
+    }
+    .homeLogin__logo h1{
+        font-size: 1.2em;
+    }
+    .homeLogin__item a{
+        font-size: 0.8em;
+    }
+    .navbar ul, aside{
+        display: none;
+    }
+    /* CABEÇALHO */
+    .ondeestou{
+        margin-bottom: 0;
+    }
+    .ondeestou h1{
+        font-size: 1em;
+        margin: 0;
+    }
+    .ondeestou h2{
+        display: none;
+    }
+    .content h3{
+        margin: 0;
+        font-size: 1.2em;
+    }
+    .txt{
+        font-size: 0.8em;
+        margin: 0;
+        }
+    .txt p{
+        margin: 0;
+        }
+    .txt a{
+        justify-content: center;
+        background-color: orange;
+        width: 100%;
+        text-decoration: none;
+    }
+} 
