@@ -9,6 +9,9 @@
 
 .cabecalho {
     background-color: #ff9800;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .acessibilidade {
@@ -17,17 +20,24 @@
     align-items: center;
     margin-right: 1vw;
 }
-.acessibilidade h2, .acessibilidade div{
+
+.acessibilidade h2,
+.acessibilidade div {
     margin: 0 1vw;
 }
-.acessibilidade h2{
+
+.acessibilidade h2 {
     font-size: 0.8em;
 }
-.acessibilidade__contraste, .acessibilidade__fonte {
+
+.acessibilidade__contraste,
+.acessibilidade__fonte {
     display: flex;
     margin-right: 1em;
 }
-.acessibilidade__idioma select, .acessibilidade__moeda select{
+
+.acessibilidade__idioma select,
+.acessibilidade__moeda select {
     border-radius: 40%;
 }
 
@@ -45,17 +55,21 @@
     margin: 1vh 1vw;
     width: 20vw;
 }
-.homeLogin__logo{
+
+.homeLogin__logo {
     width: 50vw;
+    justify-content: start;
+    padding-left: 5em;
 }
-.homeLogin__item a{
+.homeLogin__item a {
     color: #fff;
     text-decoration: none;
 }
-.homeLogin__item:hover{
-    background-color: orangered;
-    border-bottom: 1vh solid #fff;
+
+.homeLogin__item a:hover {
+    color:#000;
 }
+
 ul {
     display: flex;
     list-style: none;
@@ -63,27 +77,38 @@ ul {
 
 main {
     display: flex;
+    margin-top: 20vh;
+}
+
+.acessibilidade {
+    height: 5vh;
 }
 
 .navbar__item {
     width: 20vw;
-    height: 11vh;
+    height: 9vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 3vh;
-    
+
 }
 
-.navbar__item>a{
+.navbar__item>a {
     color: #fff;
     text-decoration: none;
 }
-.navbar__item:hover{
+
+.navbar__item:hover {
     background-color: orangered;
     border-bottom: 1vh solid #fff;
 }
-
+.fechar__hamburguer{
+    display: none;
+}
+.links__menu{
+   justify-content: center;
+}
 .leftbar {
     margin: 2vw;
 }
@@ -111,55 +136,69 @@ select {
     width: 100%;
 }
 
-.pesquisar__criancas, .pesquisar__quartos{
+.pesquisar__criancas,
+.pesquisar__quartos {
     width: 48%;
-    font-size:0.8em;
+    font-size: 0.8em;
 }
 
 
 /* FILTROS */
-.filtros{
+.filtros {
     padding: 1vw 0;
     font-size: 0.8em;
 }
-.preco, .categoria, .distancia{
+
+.preco,
+.categoria,
+.distancia {
     border: 1px solid black;
     padding: 1vw;
     border-radius: 3px;
     margin: 1em 0;
 }
-.linha{
+
+.linha {
     display: block;
 }
-form label{
+
+form label {
     font-size: 0.8em;
 }
+
+/* HAMBURGUER */
+.hamburguer,
+.hamburguer__links {
+    display: none;
+}
+
+
 /* CONTEUDO */
-.content{
+.content {
     padding: 1vw;
 }
-.content h3{
+
+.content h3 {
     font-size: 2em;
     margin: 8vh 0 2vh;
 }
-.ondeestou{
-    margin-bottom: 15vh;
+
+.ondeestou {
+    margin-bottom: 10vh;
 }
-.ondeestou h1{
+
+.ondeestou h1 {
     font-size: 2.2em;
     margin-top: 2em;
 }
-.ondeestou h2{
+
+.ondeestou h2 {
     font-size: 0.8em;
 }
+
 .parallax__renaissance {
-    /* The image used */
     background-image: url("../img/hoteis/renaissance.jpg");
-
-    /* Set a specific height */
     min-height: 250px;
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -184,7 +223,238 @@ form label{
     background-size: cover;
 }
 
-.txt p{
+.txt p {
     font-size: 1.2em;
     margin: 8vh 0 2vh;
+}
+
+.txt a {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.list__item {
+    display: block;
+    margin: 0 2vw;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #ff9800;
+    color: white;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+footer ul li {
+    padding: 0.2em;
+    font-size: 1.5em;
+}
+
+footer p {
+    margin: 1em 0;
+}
+
+/* MEDIA QUERY */
+
+@media(max-width: 1024px) {
+    main {
+        margin-top: 15vh;
+    }
+
+    .ondeestou,
+    .ondeestou h1,
+    .content h3 {
+        margin: 0.2em 0;
+    }
+
+    .txt p {
+        margin: 1em 0;
+    }
+
+    .cabecalho {
+        z-index: 1;
+    }
+
+    .navbar__item {
+        height: 5em;
+    }
+
+    .leftbar {
+        position: fixed;
+        width: 25%;
+    }
+
+    .content {
+        width: 73%;
+        position: absolute;
+        right: 0;
+        z-index: 0;
+        padding-bottom: 21vh;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        height: 10vh;
+        width: 100%;
+    }
+}
+
+@media(max-width: 450px) {
+
+    main {
+        margin-top: 6vh;
+    }
+
+    .content {
+        width: 100%;
+        padding-bottom: 12vh;
+    }
+
+    footer {
+        font-size: 0.6em;
+    }
+
+    .acessibilidade h2 {
+        display: none;
+    }
+.homeLogin{
+    justify-content: start;
+}
+    .homeLogin__logo {
+        padding-left: 0;
+    }
+
+    .homeLogin__logo h1 {
+        font-size: 1.2em;
+    }
+    .homeLogin__item{
+        width: 19vw;
+    }
+    .homeLogin__logo{
+        width: 40vw;
+    }
+    .homeLogin__item a {
+        font-size: 0.8em;
+    }
+
+    .navbar ul,
+    aside {
+        display: none;
+    }
+
+    /* CABEÇALHO */
+    .ondeestou {
+        margin-bottom: 0;
+    }
+
+    .ondeestou h1 {
+        font-size: 1.8em;
+        margin: 0;
+    }
+
+    .ondeestou h2 {
+        display: none;
+    }
+
+    .content h3 {
+        margin: 0;
+        font-size: 1.2em;
+    }
+
+    .txt {
+        font-size: 0.8em;
+        margin: 0;
+    }
+
+    .txt p {
+        margin: 0;
+    }
+
+    .txt a {
+        justify-content: center;
+        background-color: orange;
+        width: 100%;
+        text-decoration: none;
+        padding: 0.4em;
+    color: white;
+    }
+
+    /* hamburguer */
+ 
+
+    .hamburguer {
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        display: block;
+    }
+
+    .hamburguer__linha {
+        width: 30px;
+        height: 3px;
+        background-color: rgb(255, 255, 255);
+        margin: 5px;
+    }
+    .hamburguer {
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        background-color: #ffffffe0;
+        border-radius: 3px;
+    }
+
+    .links.open {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .links__menu.open {
+        display: flex;
+        flex-direction: column;
+        height: 13em;
+    }
+
+    .fechar__hamburguer {
+        justify-content: flex-end;
+        padding: 3px;
+        display: flex;
+    }
+
+    .hamburguer.open {
+        display: none;
+
+    }
+
+    .barra__navegacao {
+        position: relative;
+    }
+
+    .header__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        right: 0;
+        background-color: orange;
+    } 
+
+    .navbar__item {
+        width: 100%;
+        justify-content: end;
+        padding: 0.4em;
+    }
 }
