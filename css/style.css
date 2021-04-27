@@ -163,6 +163,13 @@ form label {
     font-size: 0.8em;
 }
 
+/* HAMBURGUER */
+.hamburguer,
+.hamburguer__links {
+    display: none;
+}
+
+
 /* CONTEUDO */
 .content {
     padding: 1vw;
@@ -258,9 +265,10 @@ footer p {
 /* MEDIA QUERY */
 
 @media(max-width: 1024px) {
-    main{
+    main {
         margin-top: 15vh;
     }
+
     .ondeestou,
     .ondeestou h1,
     .content h3 {
@@ -299,15 +307,19 @@ footer p {
         width: 100%;
     }
 }
+
 @media(max-width: 450px) {
+
     main {
         margin-top: 11vh;
     }
-    .content{
+
+    .content {
         width: 100%;
         padding-bottom: 12vh;
     }
-    footer{
+
+    footer {
         font-size: 0.6em;
     }
 
@@ -338,7 +350,7 @@ footer p {
     }
 
     .ondeestou h1 {
-        font-size: 1em;
+        font-size: 1.8em;
         margin: 0;
     }
 
@@ -366,4 +378,76 @@ footer p {
         width: 100%;
         text-decoration: none;
     }
+
+    /* hamburguer */
+    .hamburguer__linha {
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+        margin: 5px;
+    }
+
+    .hamburguer {
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        display: block;
+    }
+
+    .hamburguer__linha {
+        width: 30px;
+        height: 3px;
+        background-color: rgb(0, 0, 0);
+        margin: 5px;
+    }
+    .hamburguer {
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        background-color: #ffffffe0;
+        border-radius: 3px;
+    }
+
+    .links.open {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .links__menu.open {
+        display: flex;
+        flex-direction: column;
+        height: 13em;
+    }
+
+    .fechar__hamburguer {
+        justify-content: flex-end;
+        padding: 3px;
+        display: flex;
+    }
+
+    .hamburguer.open {
+        display: none;
+
+    }
+
+    .barra__navegacao {
+        position: relative;
+    }
+
+    .header__menu {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        align-items: flex-end;
+        position: absolute;
+        right: 0;
+        background-color: orange;
+    } 
+
+    .navbar__item {
+        width: 100%;
+    }
+}
 }

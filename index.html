@@ -48,14 +48,14 @@
                 </select>
             </div>
             <div class="acessibilidade__moeda"></div>
-                <select name="moeda" id="moeda">
-                    <option value="real">R$</option>
-                    <option value="dollar">US$</option>
-                    <option value="euro">€</i></option>
-                    <option value="libra">£</i></option>
-                </select>
-            </section>
-            <!-- LOGO, CADASTRO, LOG IN -->
+            <select name="moeda" id="moeda">
+                <option value="real">R$</option>
+                <option value="dollar">US$</option>
+                <option value="euro">€</i></option>
+                <option value="libra">£</i></option>
+            </select>
+        </section>
+        <!-- LOGO, CADASTRO, LOG IN -->
         <section class="homeLogin">
             <div class="homeLogin__logo">
                 <h1>Gulliver Traveller</h1>
@@ -66,13 +66,26 @@
             </ul>
         </section>
         <!-- BARRA DE NAVEGAÇÃO  -->
-        <nav class="navbar">
-            <ul>
-                <li class="navbar__item"><a href="#"><i class="fas fa-bed"></i> Hospedagem</a></li>
-                <li class="navbar__item"><a href="#"><i class="fas fa-plane-departure"></i> Voos</a></li>
-                <li class="navbar__item"><a href="#"><i class="fas fa-plane-departure"></i> Aluguel de Carro</a></li>
-                <li class="navbar__item"><a href="#"><i class="fas fa-utensils"></i> Gastronomia</a></li>
-            </ul>
+        <div class="barra__navegacao">
+            <nav class="navbar header__menu">
+                <div class="links">
+                    <ul class="links__menu">
+                        <li class="navbar__item"><a href="#"><i class="fas fa-bed"></i> Hospedagem</a></li>
+                        <li class="navbar__item"><a href="#"><i class="fas fa-plane-departure"></i> Voos</a></li>
+                        <li class="navbar__item"><a href="#"><i class="fas fa-plane-departure"></i> Aluguel de Carro</a>
+                        </li>
+                        <li class="navbar__item"><a href="#"><i class="fas fa-utensils"></i> Gastronomia</a></li>
+                    </ul>
+                    <div class="fechar__hamburguer">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="hamburguer">
+                    <div class="hamburguer__linha"></div>
+                    <div class="hamburguer__linha"></div>
+                    <div class="hamburguer__linha"></div>
+                </div>
+        </div>
         </nav>
     </header>
     <main>
@@ -230,22 +243,22 @@
                 </div>
                 <div class="distancia">
                     <h4>Distância da Avenida Paulista</h4>
-                        <div class="linha">
-                            <input type="checkbox" name="categoria" id="1km">
-                            <label for="1km">Menos de 1 km</label>
-                        </div>
-                        <div class="linha">
-                            <input type="checkbox" name="categoria" id="3km">
-                            <label for="3km">Menos de 3 km</label>
-                        </div>
-                        <div class="linha">
-                            <input type="checkbox" name="categoria" id="5km">
-                            <label for="5km">Menos de 5 km</label>
-                        </div>
-                        <div class="linha">
-                            <input type="checkbox" name="categoria" id="10km">
-                            <label for="10km">menos de 10 km</label>
-                        </div>
+                    <div class="linha">
+                        <input type="checkbox" name="categoria" id="1km">
+                        <label for="1km">Menos de 1 km</label>
+                    </div>
+                    <div class="linha">
+                        <input type="checkbox" name="categoria" id="3km">
+                        <label for="3km">Menos de 3 km</label>
+                    </div>
+                    <div class="linha">
+                        <input type="checkbox" name="categoria" id="5km">
+                        <label for="5km">Menos de 5 km</label>
+                    </div>
+                    <div class="linha">
+                        <input type="checkbox" name="categoria" id="10km">
+                        <label for="10km">menos de 10 km</label>
+                    </div>
                 </div>
             </section>
         </aside>
@@ -404,7 +417,32 @@
         </ul>
         <p>Direitos Reservados - Projeto Traveller</p>
     </footer>
+    <script>
+        function toggleMenu() {
+            const hamburguer = document.querySelector('.hamburguer');
+            const fecharHamburguer = document.querySelector('.fechar__hamburguer');
+            const navLinks = document.querySelector('.links__menu');
+            const linksWrapper = document.querySelector('.links');
+            hamburguer.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+                linksWrapper.classList.toggle('open');
+                hamburguer.classList.toggle('open');
+                fecharHamburguer.style.display = "flex";
 
+            });
+            fecharHamburguer.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+                fecharHamburguer.style.display = "none";
+                hamburguer.classList.toggle('open');
+                linksWrapper.classList.toggle('open');
+
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            toggleMenu();
+        });
+    </script>
 
 </body>
 
