@@ -77,7 +77,6 @@ ul {
 
 main {
     display: flex;
-    margin-top: 20vh;
 }
 
 .acessibilidade {
@@ -100,7 +99,7 @@ main {
 }
 
 .navbar__item:hover {
-    background-color: orangered;
+    background-color: #ff9800;
     border-bottom: 1vh solid #fff;
 }
 .fechar__hamburguer{
@@ -189,7 +188,6 @@ form label {
 
 .ondeestou h1 {
     font-size: 2.2em;
-    margin-top: 2em;
 }
 
 .ondeestou h2 {
@@ -268,9 +266,7 @@ footer p {
 /* MEDIA QUERY */
 
 @media(max-width: 1024px) {
-    main {
-        margin-top: 15vh;
-    }
+
 
     .ondeestou,
     .ondeestou h1,
@@ -312,10 +308,6 @@ footer p {
 }
 
 @media(max-width: 450px) {
-
-    main {
-        margin-top: 6vh;
-    }
 
     .content {
         width: 100%;
@@ -411,7 +403,7 @@ footer p {
         position: absolute;
         right: 0;
         cursor: pointer;
-        background-color: #ffffffe0;
+        margin: 6px;
         border-radius: 3px;
     }
 
@@ -431,7 +423,7 @@ footer p {
     .fechar__hamburguer {
         justify-content: flex-end;
         padding: 3px;
-        display: flex;
+        /* display: flex; */
     }
 
     .hamburguer.open {

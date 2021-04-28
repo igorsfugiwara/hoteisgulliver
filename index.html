@@ -447,6 +447,16 @@
         document.addEventListener("DOMContentLoaded", function () {
             toggleMenu();
         });
+
+        function marginMainHeader() {
+            const header = document.querySelector('header').offsetHeight;
+            const main = document.querySelector('main');
+
+            main.style.marginTop = header + 'px';
+        }
+    
+        window.addEventListener("resize", marginMainHeader);
+        marginMainHeader();
     </script>
 
 </body>
